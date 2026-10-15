@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ccpo"
+version = "0.1.0"
+description = "Contextual Credit Policy Optimization (CCPO): step-level credit assignment for LLM agents"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+torch = ["torch>=2.0"]
+
+[tool.setuptools.packages.find]
+include = ["ccpo*"]
